@@ -143,17 +143,17 @@ var quantize = d3.scaleQuantize()
 
 function loadDashboard() {
 
-    d3.csv("data/losses2015_transformed.csv", function(error, data) {
+    d3.csv("https://raw.githubusercontent.com/KuldeepSinh24/VA-HomeWork4/master/Data/losses2015_transformed.csv", function(error, data) {
         if (error) throw error;
         dataset = data;
 
-        d3.tsv("data/us-states.tsv", function(error, state_names) {
+        d3.tsv("https://raw.githubusercontent.com/KuldeepSinh24/VA-HomeWork4/master/Data/us-states.tsv", function(error, state_names) {
 
             for (var i = 0; i < state_names.length; i++) {
                 state_name_map[state_names[i].id] = state_names[i].code;
             }
 
-            d3.json("data/us-10m.json", function(error, us) {
+            d3.json("https://raw.githubusercontent.com/KuldeepSinh24/VA-HomeWork4/master/Data/us-10m.json", function(error, us) {
                 usdata = us
                 if (error) throw error;
                 createBarChart()

@@ -1,5 +1,6 @@
 # ITCS 5122 - Visual Analytics - HomeWork4
-
-How to run
-
-To run the file, either clone or download the zip. Extract it and then open index.html.
+#801045027
+How to run:
+Download and open index.html to run this file.
+If the map in the index.html is not loaded,
+Please change the github url to the local address.
